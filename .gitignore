@@ -1,0 +1,12 @@
+# Apple
+.DS_Store
+.AppleDouble
+
+# Thumbnails
+._*
+
+# Logs
+*.log
+
+# Applications
+volumes/App

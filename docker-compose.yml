@@ -1,0 +1,18 @@
+version: "2"
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    tty: true
+    volumes:
+      - ./volumes/App:/var/www/App
+    privileged: true
+  db:
+    build: "./db"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: backsupport_master
+
